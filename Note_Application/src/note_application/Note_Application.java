@@ -20,7 +20,7 @@ public class Note_Application extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root,560,350);
         
         stage.setScene(scene);
         stage.show();
