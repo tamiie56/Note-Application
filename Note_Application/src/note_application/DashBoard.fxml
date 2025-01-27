@@ -8,21 +8,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="647.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="note_application.DashBoardController">
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="note_application.DashBoardController">
    <children>
-      <TextField alignment="TOP_LEFT" layoutX="27.0" layoutY="41.0" prefHeight="390.0" prefWidth="339.0" promptText="Keep Taking Notes......" />
-      <Button layoutX="82.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: #007f66;" text="Add" textFill="WHITE">
+      <TextField fx:id="note" alignment="TOP_LEFT" layoutX="27.0" layoutY="41.0" prefHeight="390.0" prefWidth="339.0" promptText="Keep Taking Notes......" />
+      <Button fx:id="addbtn" layoutX="82.0" layoutY="459.0" mnemonicParsing="false" onAction="#addbuttonevent" style="-fx-background-color: #007f66;" text="Add" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="155.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: #007f66;" text="Edit" textFill="WHITE">
+      <Button fx:id="editbtn" layoutX="155.0" layoutY="459.0" mnemonicParsing="false" onAction="#editbuttonevent" style="-fx-background-color: #007f66;" text="Edit" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="227.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: #fc4e4e;" text="Delete" textFill="WHITE">
+      <Button fx:id="dltbtn" layoutX="227.0" layoutY="459.0" mnemonicParsing="false" onAction="#deletebuttonevent" style="-fx-background-color: #fc4e4e;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -32,9 +31,9 @@
             <Font name="STCaiyun" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="396.0" layoutY="41.0" prefHeight="390.0" prefWidth="226.0">
+      <TableView fx:id="tableview" layoutX="396.0" layoutY="41.0" prefHeight="390.0" prefWidth="226.0">
         <columns>
-          <TableColumn prefWidth="225.59998168945313" text="Previous Notes" />
+          <TableColumn fx:id="mynotes" prefWidth="225.59998168945313" text="Previous Notes" />
         </columns>
       </TableView>
    </children>

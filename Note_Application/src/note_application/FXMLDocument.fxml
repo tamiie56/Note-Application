@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="note_application.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="note_application.FXMLDocumentController">
     <children>
         <Button fx:id="Lg1" layoutX="426.0" layoutY="153.0" onAction="#LoginButtonEvent" style="-fx-background-color: #007f66;" text="Login" textFill="WHITE">
          <font>
@@ -29,36 +29,36 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Label>
-      <TextField layoutX="366.0" layoutY="48.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserName" style="-fx-background-color: #90ee90;">
+      <TextField fx:id="lusnm" layoutX="366.0" layoutY="48.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserName" style="-fx-background-color: #90ee90;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></TextField>
-      <PasswordField layoutX="368.0" layoutY="97.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter Your User ID" style="-fx-background-color: #90ee90;">
+      <PasswordField fx:id="lusid" layoutX="368.0" layoutY="97.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter Your User ID" style="-fx-background-color: #90ee90;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></PasswordField>
       <Label layoutX="370.0" layoutY="193.0" prefHeight="26.0" prefWidth="158.0" text="You Don't Have an Account?" textFill="#f40b0b" />
-      <Label layoutX="386.0" layoutY="230.0" prefHeight="22.0" prefWidth="126.0" text="Sign Up Then" textAlignment="CENTER" textFill="#50c878">
+      <Label layoutX="374.0" layoutY="230.0" prefHeight="30.0" prefWidth="158.0" text="Sign Up Then" textAlignment="CENTER" textFill="#50c878">
          <font>
-            <Font name="STCaiyun" size="18.0" />
+            <Font name="STCaiyun" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="Lg11" layoutX="409.0" layoutY="442.0" onAction="#LoginButtonEvent" style="-fx-background-color: #007f66;" text="Sign Up" textFill="#fffffffc">
+      <Button fx:id="Lg11" layoutX="409.0" layoutY="442.0" onAction="#SignupButtonEvent" style="-fx-background-color: #007f66;" text="Sign Up" textFill="#fffffffc">
          <font>
             <Font name="Times New Roman Bold" size="13.0" />
          </font>
       </Button>
-      <TextField layoutX="362.0" layoutY="288.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserName" style="-fx-background-color: #90ee90;">
+      <TextField fx:id="sunmn" layoutX="362.0" layoutY="288.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserName" style="-fx-background-color: #90ee90;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <TextField layoutX="362.0" layoutY="333.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserID" style="-fx-background-color: #90ee90;">
+      <TextField fx:id="susid" layoutX="362.0" layoutY="333.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserID" style="-fx-background-color: #90ee90;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <TextField layoutX="363.0" layoutY="377.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserEmail" style="-fx-background-color: #90ee90;">
+      <TextField layoutX="363.0" layoutY="377.0" onAction="#susem" prefHeight="26.0" prefWidth="164.0" promptText="Enter Your User UserEmail" style="-fx-background-color: #90ee90;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Label>
-      <AnchorPane prefHeight="505.0" prefWidth="273.0" style="-fx-background-color: #00ff00;">
+      <AnchorPane prefHeight="507.0" prefWidth="275.0" style="-fx-background-color: #00ff00;">
          <children>
             <Label layoutX="19.0" layoutY="34.0" prefHeight="102.0" prefWidth="238.0" text="Welcome ">
                <font>

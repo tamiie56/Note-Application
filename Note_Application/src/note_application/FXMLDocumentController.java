@@ -11,6 +11,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -24,6 +26,14 @@ public class FXMLDocumentController implements Initializable {
     private Button Lg1;
     @FXML
     private Button Lg11;
+    @FXML
+    private TextField lusnm;
+    @FXML
+    private PasswordField lusid;
+    @FXML
+    private TextField sunmn;
+    @FXML
+    private TextField susid;
     
    
     @Override
@@ -34,6 +44,14 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void LoginButtonEvent(ActionEvent event) {
         
+    }
+
+    @FXML
+    private void SignupButtonEvent(ActionEvent event) {
+    }
+
+    @FXML
+    private void susem(ActionEvent event) {
     }
     
 }
