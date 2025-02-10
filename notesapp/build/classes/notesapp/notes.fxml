@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="513.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notesapp.NotesController">
+    <Label layoutX="50.0" layoutY="8.0" text="InfiniNotes" textFill="#020aff">
+      <font>
+         <Font name="STCaiyun" size="24.0" />
+      </font></Label>
+    <ListView fx:id="notesList" layoutX="50" layoutY="50" prefHeight="175.0" prefWidth="314.0" />
+    <TextField fx:id="titleField" layoutX="50.0" layoutY="245.0" prefHeight="26.0" prefWidth="314.0" promptText="Title" />
+    <TextArea fx:id="contentField" layoutX="50" layoutY="286.0" prefHeight="112.0" prefWidth="324.0" promptText="Content" />
+    <Button layoutX="64.0" layoutY="419.0" onAction="#handleAddNote" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: green;" text="Add" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+    <Button layoutX="137.0" layoutY="419.0" onAction="#handleEditNote" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #0fef07;" text="Edit" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+    <Button layoutX="207.0" layoutY="419.0" onAction="#handleDeleteNote" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+    <Button layoutX="315.0" layoutY="466.0" onAction="#handleLogout" prefWidth="70" text="Logout" textFill="#04d134" />
+</AnchorPane>
